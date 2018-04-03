@@ -1,0 +1,85 @@
+/**
+ * Default Look and Feel
+ */
+.alertify,
+.alertify-log {
+	font-family: Calibri;
+}
+.alertify {
+	margin-top:12px;
+	background-color: #f2f7f7;
+	/*border: 10px solid #333;*/ /* browsers that don't support rgba */
+	/*border: 10px solid rgba(0,0,0,.7);*/
+	border-radius: 8px;
+	box-shadow: 0 3px 3px rgba(0,0,0,.3);
+	-webkit-background-clip: padding;     /* Safari 4? Chrome 6? */
+	   -moz-background-clip: padding;     /* Firefox 3.6 */
+	        background-clip: padding-box; /* Firefox 4, Safari 5, Opera 10, IE 9 */
+}
+	.alertify-text {
+		border: 1px solid #CCC;
+		padding: 10px;
+		border-radius: 4px;
+	}
+	.alertify-button {
+		cursor:pointer;
+	position:relative;
+	width: 7vw;
+	height:auto;
+	border: solid 1px transparent;
+	padding: 0.3vw 1.7vw 0.3vw 0.4vw;
+	font-weight: bold;
+	cursor: pointer;
+	border-color: #d3d3d3;
+	background-color:#FFF;
+	color:#6baba5;
+	border-radius:5px;
+	box-shadow: 0 1px 2px rgba(0,0,0,.1);
+	margin-top:2vw;
+	font-family: "Calibri";
+		
+	}
+	.alertify-button:hover,
+	.alertify-button:focus {
+		outline: none;
+		background-image: -webkit-linear-gradient(top, rgba(0,0,0,.1), rgba(0,0,0,0));
+		background-image:    -moz-linear-gradient(top, rgba(0,0,0,.1), rgba(0,0,0,0));
+		background-image:     -ms-linear-gradient(top, rgba(0,0,0,.1), rgba(0,0,0,0));
+		background-image:      -o-linear-gradient(top, rgba(0,0,0,.1), rgba(0,0,0,0));
+		background-image:         linear-gradient(top, rgba(0,0,0,.1), rgba(0,0,0,0));
+	}
+	.alertify-button:focus {
+		/*box-shadow: 0 0 15px #FF00FF;*/
+	}
+	.alertify-button:active {
+		position: relative;
+		box-shadow: inset 0 2px 4px rgba(0,0,0,.15), 0 1px 2px rgba(0,0,0,.05);
+	}
+		.alertify-button-cancel,
+		.alertify-button-cancel:hover,
+		.alertify-button-cancel:focus {
+			background-color: #FFFFFF;
+			/*border: 1px solid #D83526;*/
+		}
+		.alertify-button-ok,
+		.alertify-button-ok:hover,
+		.alertify-button-ok:focus {
+
+			/*border: 1px solid #3B7808;*/
+		}
+
+.alertify-log {
+	background: #1F1F1F;
+	background: rgba(0,0,0,.9);
+	padding: 15px;
+	border-radius: 4px;
+	color: #F00;
+	
+}
+	.alertify-log-error {
+		background-color: #f2f7f7;
+	}
+	.alertify-log-success {
+		background: #f2f7f7; 
+		color: #5CB811;
+	}

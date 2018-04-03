@@ -1,0 +1,57 @@
+<?php
+ /**
+  * MVC samples - benlitech
+  * Despachador de pedidos
+  */
+  
+  //add function helper
+  include "func.php";  
+  LoadController('home');
+  LoadController('ilha'); //add ilhas functionality
+  
+  
+  use BenliTech\HomeController\Home;
+  use BenliTech\IlhaController\Ilhas;
+  
+  
+  if( $_SERVER[ 'REQUEST_METHOD'] == "POST"){
+        if(! isset( $_POST['want'] ) ){
+            return null;
+        } 
+        
+        //what they want?
+        $want = $_POST['want'];
+        $need = $_POST['data'];
+        
+        switch( $want ){
+            case 'ilha':
+                $ilhas = new Ilhas();
+                
+                switch($need){
+                    case 'list':
+                        print $ilhas->getIlhas();
+                    break;
+                }
+            break;            
+        }
+  }else{
+    
+    if(! isset( $_GET['page'] ) ){
+        $page = "home";
+    }
+    
+    show_head();
+        //get page
+        switch($page){
+            case "home":
+                
+                $home = new Home();
+                $data['ilha'] = "Fogo";
+                $data['home'] = "AM AT HOME";
+                $home->index( $data['home'] );
+            break;    
+        }
+    show_foot();
+  }
+?>
+  

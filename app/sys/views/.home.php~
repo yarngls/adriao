@@ -1,0 +1,11 @@
+<?php
+    /* 
+     * MVC - sample -benlitech
+     * Home view
+     */
+?>
+<div>
+    <span><b>Hello am Home</b></span>
+    
+    <button id="getilha">Get Ilhas</button>
+</div>

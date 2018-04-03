@@ -1,0 +1,40 @@
+<?php
+ /**
+  * MVC - Sample functions - benlitech
+  */
+    function show_head(){
+    ?> 
+        <html>
+            <head>
+                <title>BenliTech</title>
+                <script type="text/javascript" src="js/jquery.1.9.min.js"></script>
+                <script type="text/javascript" src="js/nos.js"></script>
+            </head>
+            <body>
+    <?php
+    }    
+    function show_foot(){
+    ?>
+        </body>
+        </html>
+    <?php
+    }
+    
+    //include controller
+    function LoadController($name){
+        $controller_path = dirname(__FILE__) . "/controller/";
+        $controller = $controller_path . $name . "_controller.php";
+        
+        if( file_exists( $controller )){
+            include_once( $controller );
+        }
+        
+    }
+    
+  
+  
+?>
+  
+  
+  
+  
