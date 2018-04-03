@@ -13,9 +13,9 @@ use PDO;
 
 class DBTools{
     private $con = null; //connection
-    private $database = '920242';//databaseHERE
-    private $username = '920242';
-    private $password = 'adriao02015';
+    private $database = 'appadriao';//databaseHERE
+    private $username = 'root';
+    private $password = 'b3nl1t3ch18';
     private $hostname = '127.0.0.1';
     
     function __construct(){  
